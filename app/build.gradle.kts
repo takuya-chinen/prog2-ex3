@@ -10,6 +10,10 @@ plugins {
     application
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -34,7 +38,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "Main"
 }
 
 tasks.named<Test>("test") {

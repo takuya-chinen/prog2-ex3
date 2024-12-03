@@ -1,14 +1,16 @@
 package jp.ac.uryukyu.ie.e245732;
 
 public class Dice {
+    private int maxValue;
     private int value;
 
-    public Dice() {
+    public Dice(int _maxValue) {
+        this.maxValue = _maxValue;
         play();
     }
 
     public int play() {
-        value = (int) (Math.random() * 5) + 1;
+        value = (int) (Math.random() * this.maxValue) + 1;
         return value;
     }
 

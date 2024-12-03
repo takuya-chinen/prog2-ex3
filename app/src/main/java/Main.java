@@ -1,11 +1,10 @@
 import jp.ac.uryukyu.ie.e245732.*;
-import jp.ac.uryukyu.ie.e245745.ExDice;
 
 public class Main {
-    public static void main(String[] args) {
-        Dice dice = new Dice();
-        System.out.println(dice.getValue());
-        ExDice exdice = new ExDice(100);
-        System.out.println(exdice.getValue());
-    }
+    public static void main(String[] args){
+        Dice dice1 = new Dice(6);
+        System.out.println(dice1.getValue());
+        Dice dice2 = new Dice(100);
+        System.out.println(dice2.getValue());
+      }
 }
